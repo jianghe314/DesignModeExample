@@ -7,6 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import builder_pattern.Builder;
+import builder_pattern.ConcreteBuilder;
+import builder_pattern.Director;
+import proxy_pattern.ProxyBuy;
+import proxy_pattern.ProxyPattern;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
@@ -39,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        ProxyPattern proxyPattern = new ProxyPattern();
     }
 
 }
