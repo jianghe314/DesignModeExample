@@ -10,6 +10,7 @@ import android.widget.TextView;
 import builder_pattern.Builder;
 import builder_pattern.ConcreteBuilder;
 import builder_pattern.Director;
+import decorator_pattern.DecoratorPattern;
 import proxy_pattern.ProxyBuy;
 import proxy_pattern.ProxyPattern;
 
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        ProxyPattern proxyPattern = new ProxyPattern();
+
     }
 
 }
